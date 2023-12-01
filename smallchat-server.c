@@ -38,8 +38,7 @@
 #include "chatlib.h"
 
 /* ============================ Data structures =================================
- * The minimal stuff we can afford to have. This example must be simple
- * even for people that don't know a lot of C.
+ * 我们能买得起的最少的东西。 这个例子一定很简单即使对于不太了解 C 的人来说也是如此。
  * =========================================================================== */
 
 #define MAX_CLIENTS 1000 // This is actually the higher file descriptor.
@@ -54,7 +53,7 @@ struct client {
     char *nick; // Nickname of the client.
 };
 
-/* This global structure encapsulates the global state of the chat. */
+/* 这个全局结构封装了聊天的全局状态. */
 struct chatState {
     int serversock;     // Listening server socket.
     int numclients;     // Number of connected clients right now.
